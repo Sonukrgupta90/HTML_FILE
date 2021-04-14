@@ -1,0 +1,131 @@
+/*
+    css selector
+1. simple selector - call any tag by calling its name ex:- body,h1,etc.
+2. combinator selector - inherit the property of parent into child and vice versa ex :- div tag,
+3. pseudo class selector - to target a particular class  ex:- <div class="div 1">   and call by     .div 1{}
+4. pseudo id selector - by defining a particular id   ex:- <h1 id="tgt">hi</h1>  and call by     #tgt{}
+5. attribute selector - by calling an attribute
+
+
+
+
+
+hover is used to darken the object..
+
+
+
+
+*/
+
+body {
+    background-color: chartreuse;
+    background-image: url(picture.jpg);
+    background-size: inherit;
+    background: no-repeat;
+    background: fixed;
+    animation-name: bgchange;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+}
+
+@keyframes bgchange {
+    15% {
+        background-image: url(picture.jpg);
+    }
+    60% {
+        background-image: url(picture_2.jpg);
+    }
+}
+
+.div1 {
+    color: cornsilk;
+}
+
+a[target="_blank"] {
+    color: rgb(226, 131, 21);
+}
+
+p {
+    color: aqua;
+    color: #fff;
+    color: rgb(226, 131, 21);
+    color: hsl(hue, saturation, lightness);
+    font-size: xx-large;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 0.3;
+    font-style: italic;
+    outline: gold solid 14px;
+}
+
+.img1 {
+    height: 250px;
+    width: 250px;
+    opacity: 0.5;
+    transition: 0.8s ease-in-out;
+    animation-duration: 2;
+    border: 5px solid crimson;
+    border-radius: 15px;
+    border-width: 17px;
+    border-style: dotted;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.img1:hover {
+    height: 250px;
+    width: 750px;
+    opacity: 1;
+}
+
+#img5 {
+    height: 200px;
+    width: 100px;
+    float: right;
+    animation-name: movement;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@@keyframes movement {
+    0% {
+        margin-left: 0%;
+    }
+    10% {
+        margin-right: 10%;
+    }
+    20% {
+        margin-right: 20%;
+    }
+    30% {
+        margin-right: 30%;
+    }
+    40% {
+        margin-right: 40%;
+    }
+    50% {
+        margin-right: 50%;
+    }
+    60% {
+        margin-right: 60%;
+    }
+    70% {
+        margin-right: 70%;
+    }
+    80% {
+        margin-right: 80%;
+    }
+    90% {
+        margin-right: 90%;
+    }
+    100% {
+        margin-right: 100%;
+    }
+}
+
+#road {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
