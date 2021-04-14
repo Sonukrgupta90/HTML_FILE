@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+}
+
+tbody {
+    background-color: brown;
+    color: green;
+}
+
+table {
+    padding: 10px;
+}
